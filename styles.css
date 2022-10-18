@@ -1,0 +1,51 @@
+/* Colour palette:
+Red: #cc2d30
+Red darker: #a32426
+Gold: #FFD700
+Blue: 	#9bdbc1
+Blue Darker: #7caf9a
+
+from: https://www.color-hex.com/color-palette/66925 */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+text-align: center;
+color: #FFD700;
+text-shadow: 1px 2px 2px #555;
+margin-bottom: 0px;
+}
+
+.device-container {
+    background-color: #cc2d30;
+    border-radius: 50px;
+    height: 800px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px rgb(41, 41, 41);
+}
+
+.screen {
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 25px
+}
+
+.controls-container {
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    margin: 10px;
+}
