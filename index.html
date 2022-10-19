@@ -6,15 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danny's Etch-a-Sketch</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./reset.css">
     <script src="./script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="device-container">
-            <h1>Danny's Etch-a-Sketch</h1>
-            <div class="screen"></div>
-            <div class="controls-container">
+    <div class="flex-container">
+        <div class="title">Danny's Etch-a-Sketch</div>
+            <div class="content">
+                <div class="board"></div>
+                    <div class="buttons">
+                        <button class="black">Black</button>
+                        <button class="white">White</button>
+                        <button class="random">Random</button>
+                        <button class="reset">Reset</button>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="size of board" value="16" />
+                        <button>Set Size</button>
+                    </div>
             </div>
         </div>
     </div>
