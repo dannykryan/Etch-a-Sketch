@@ -11,19 +11,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: url(pictures/woodgrain-oak.jpg);
 }
 
-h1 {
+.title {
 text-align: center;
+font-size: 36px;
 color: #FFD700;
 text-shadow: 1px 2px 2px #555;
 margin-bottom: 0px;
+margin-top: 25px;
 }
 
-.device-container {
+.device-body {
     background-color: #cc2d30;
     border-radius: 50px;
-    height: 800px;
+    height: 840px;
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -33,19 +36,75 @@ margin-bottom: 0px;
     box-shadow: 0px 0px 5px 0px rgb(41, 41, 41);
 }
 
-.screen {
+.container {
     width: 600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    background-color: white;
-    border-radius: 25px
+    border: 6px solid #962123;
+    display: grid;
 }
 
 .controls-container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 100px;
-    width: 200px;
+    width: 1fr;
     margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
+
+.buttons-container {
+    box-shadow: 2px 2px 3px #7a1e1f, -3px -3px 3px #ec8687;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    height: 40px;
+    width: 80px;
+    background-color: #cc2d30;
+    border: none;
+    border-left: solid 1px #58191a;
+    color: #58191a;
+    text-align: center;
+    text-decoration: none;
+}
+
+.black {
+    border-radius: 10px 0px 0px 10px;
+    border-left: none;
+}
+
+.reset {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.black:focus {
+    background-color: blue;
+}
+
+.knob-left, .knob-right {
+    background-color: white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 3px 3px 5px 0px rgb(41, 41, 41);
+}
+
+  .clipped {
+    clip-path: polygon(50% 0%, 46.93% 3.1%, 43.47% 0.43%, 40.83% 3.9%, 37.06% 1.7%, 34.89% 5.49%, 30.87% 3.81%, 29.21% 7.85%, 25% 6.7%, 23.89% 10.92%, 19.56% 10.33%, 19.01% 14.66%, 14.64% 14.64%, 14.66% 19.01%, 10.33% 19.56%, 10.92% 23.89%, 6.7% 25%, 7.85% 29.21%, 3.81% 30.87%, 5.49% 34.89%, 1.7% 37.06%, 3.9% 40.83%, 0.43% 43.47%, 3.1% 46.93%, 0% 50%, 3.1% 53.07%, 0.43% 56.53%, 3.9% 59.17%, 1.7% 62.94%, 5.49% 65.11%, 3.81% 69.13%, 7.85% 70.79%, 6.7% 75%, 10.92% 76.11%, 10.33% 80.44%, 14.66% 80.99%, 14.64% 85.36%, 19.01% 85.34%, 19.56% 89.67%, 23.89% 89.08%, 25% 93.3%, 29.21% 92.15%, 30.87% 96.19%, 34.89% 94.51%, 37.06% 98.3%, 40.83% 96.1%, 43.47% 99.57%, 46.93% 96.9%, 50% 100%, 53.07% 96.9%, 56.53% 99.57%, 59.17% 96.1%, 62.94% 98.3%, 65.11% 94.51%, 69.13% 96.19%, 70.79% 92.15%, 75% 93.3%, 76.11% 89.08%, 80.44% 89.67%, 80.99% 85.34%, 85.36% 85.36%, 85.34% 80.99%, 89.67% 80.44%, 89.08% 76.11%, 93.3% 75%, 92.15% 70.79%, 96.19% 69.13%, 94.51% 65.11%, 98.3% 62.94%, 96.1% 59.17%, 99.57% 56.53%, 96.9% 53.07%, 100% 50%, 96.9% 46.93%, 99.57% 43.47%, 96.1% 40.83%, 98.3% 37.06%, 94.51% 34.89%, 96.19% 30.87%, 92.15% 29.21%, 93.3% 25%, 89.08% 23.89%, 89.67% 19.56%, 85.34% 19.01%, 85.36% 14.64%, 80.99% 14.66%, 80.44% 10.33%, 76.11% 10.92%, 75% 6.7%, 70.79% 7.85%, 69.13% 3.81%, 65.11% 5.49%, 62.94% 1.7%, 59.17% 3.9%, 56.53% 0.43%, 53.07% 3.1%);
+  }
+
+  .brush-size {
+    display: flex;
+    justify-content: center;
+  }

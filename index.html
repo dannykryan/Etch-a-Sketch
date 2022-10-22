@@ -10,11 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="device-container">
-            <h1>Danny's Etch-a-Sketch</h1>
-            <div class="screen"></div>
+    <div class="flex-container">
+        <div class="device-body">
+            <div class="title">Danny's Etch-a-Sketch</div>
+            <div class="container"></div>
             <div class="controls-container">
+                <div class="knob-left clipped"></div>
+                    <div class="controlpanel">
+                    <div class="buttons-container">
+                    <button onclick="changeColor('black')" class="black">Black</button>
+                    <button onclick="changeColor('random')" class="rainbow">Rainbow</button>
+                    <button onclick="changeColor('#d1d1d1')" class="eraser">Eraser</button>
+                    <button onclick="resetBoard()" class="reset">Reset</button><br>
+                    </div>
+                    <div class="brush-size">
+                        <input type="range" name="Brush Size"
+                        min="16" max="100" onchange="changeSize(this.value)" value="1">
+                        <label for="brush-size">Canvas Size</label>
+                    </div>
+                    </div>
+                <div class="knob-right clipped"></div>
             </div>
         </div>
     </div>
